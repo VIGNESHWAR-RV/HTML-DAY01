@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7.Form Shown in Link</title>
+    <style>
+         #name{
+            display: inline-block;
+            width: 180px;
+            position: relative;
+            top: -3em;
+            border: none;
+            border-bottom: solid black;
+            margin-right: 20px;
+            text-align: center;
+          }
+           .name{
+            display: inline-block;
+             width: 150px;
+             margin-right: .5em;
+             padding-top: 1.5em;
+             padding-left: 20px;
+          }           
+           #address{
+            display: inline-block;
+            width: 320px;
+            position: relative;
+            top: -3em;
+            border: none;
+            border-bottom: solid black;
+            margin-right: 20px;
+            text-align: left;
+            padding-left: 50px;
+           }
+           .address{
+            display: inline-block;
+             width: 150px;
+             margin-right: .5em;
+             padding-left: 20px;
+           }
+           #city{
+            display: inline-block;
+            width: 100px;
+            position: relative;
+            top: -3em;
+            border: none;
+            border-bottom: solid black;
+            margin-right: 20px;
+            text-align: center;
+           }
+            .city{
+             display: inline-block;
+              width: 150px;
+              margin-right: -2em;
+              padding-left: 20px;
+           }
+           #state{
+             display: inline-block;
+             width: 100px;
+             position: relative;
+             top: -3em;
+             border: none;
+             border-bottom: solid black;
+             margin-right: 20px;
+             text-align: center;
+           }
+            .state{
+             display: inline-block;
+              width: 150px;
+              margin-right: .5em;
+           } 
+           #zip{
+             display: inline-block;
+             width: 100px;
+             position: relative;
+             top: -3em;
+             border: none;
+             border-bottom: solid black;
+             text-align: center;
+           }
+            .zip{
+             display: inline-block;
+             width: 80px;
+             margin-left: -20px;
+           }        
+           .label{
+               padding-left: 20px;
+           }
+       </style>
+</head>
+<body>
+    <form style="border: solid black; width: 450px;">
+        <h2 style="background-color: red; color: white; margin: 10px; padding-left: 15px; ">
+            Yes! I want to subscribe to <em>Mag-O-Zine</em></h2>
+            <label class="name">First Name<input id="name" value="Joe" /></label>
+            <label class="name" style="margin-left: 20px;">First Name<input id="name" value="Schmegeggie" /></label>
+            <label class="address">Address<input id="address" value="1001 Washington Street" /></label><br>
+            <label class="city">City<input id="city" value="Antown" /></label>
+            <label class="state">State<input  id="state" value="CA" /></label>
+            <label class="zip">Zip<input type="number" id="zip" value="99999"/></label><br>
+            <label for="radio" class="label" ><b>Subscribe for:</b>
+            <input type="checkbox" name="tick"/><b>1 year ($19.95)</b>
+            <input type="checkbox" name="tick"><b>2 years($35.00)</b></label>
+            <h4 style="padding-left: 20px; margin-top: 5px;">Send me more information about:</h4>
+            <div style="padding-left: 20px; margin-top: -15px;">
+             <input type="checkbox" name="Zine"><label> Computer-Zine</label><br>
+             <input type="checkbox" name="Zine"><label> Fishing-Zine</label><br>
+             <input type="checkbox" name="Zine"><label> Cat-O-Zine</label>
+            </div>
+    </form>
+</body>
+</html>
